@@ -46,3 +46,12 @@ structured `Error: …` string, never a raise.
 Listed → Runnable → Verified. Local checks passing: `py_compile`, frontmatter lint,
 `run()` signature ↔ parameters match, and a synthetic-data smoke test (crossover
 detection, EMA path, `fast >= slow` rejection, short-history guard).
+
+## Disclaimer / 免责声明
+
+- **Research & educational use only.** Output is informational research, **not investment advice**, and makes **no promise of returns** or profitability.
+- **Data sources:** A-share via `panda_data`; HK / US via `tqx_data` (platform-provided). Output quality depends entirely on upstream data availability and correctness.
+- **Assumptions & limitations:** MAs are computed on daily closes; a cross is the sign change of `(fast − slow)`. This is a **signal descriptor, not a backtest** — no transaction costs, slippage, or position sizing are modeled, and a crossover is not a buy/sell recommendation. `last_cross` is `null` when history `< slow_period`.
+- **Risk boundary:** do not use as the sole basis for real-money entries/exits; validate independently and understand market risk.
+
+中文:仅供研究与教育用途,输出为信息性研究,**不构成投资建议,不承诺任何收益**。数据来源:A股经 `panda_data`、港美股经 `tqx_data`(平台提供)。均线基于日线,交叉为 `(fast − slow)` 变号;这是**信号描述而非回测**,未计交易成本/滑点/仓位,金叉死叉不等于买卖建议,历史不足 `slow_period` 时 `last_cross` 为 `null`。**请勿作为实盘进出场唯一依据**,注意市场风险。
