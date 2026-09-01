@@ -1,5 +1,5 @@
 ---
-name: ma_crossover_signal
+name: ma-crossover-signal
 license: GPL-3.0-only
 description: |
   Moving-average crossover for ONE symbol: fast vs slow MA (SMA/EMA), trend state, latest golden/death cross (date + bars ago), MA gap, price bias (乖离率). Auto-routes A-share / HK / US by suffix.
