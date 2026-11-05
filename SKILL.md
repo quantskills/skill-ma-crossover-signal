@@ -74,3 +74,7 @@ Fast/slow moving-average crossover snapshot for one symbol across A-share / HK /
 "fast MA is above slow MA" — hides whether the cross is fresh or 40 bars old. Detecting the
 cross by the sign change of (fast − slow) and returning its date + bars-ago gives the agent
 the timing, not just the current ordering, in one panda_data / tqx_data-backed call.
+
+## Pandadata compatibility
+
+[Pandadata 1.0.6 compatibility](references/pandadata-compatibility.md) — exact SDK baseline, validation scope, and shared guidance for all supported agent runtimes.
