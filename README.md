@@ -115,3 +115,6 @@ skill-ma-crossover-signal/
 ## License
 
 GPL-3.0-only。本 skill 为 QuantSkills 社区原创，均线与交叉检测为量化通用做法。许可证全文见 [`LICENSE`](./LICENSE)。
+
+
+Pandadata 兼容维护：[abgyjaguo](https://github.com/abgyjaguo)，保留原项目作者署名。
